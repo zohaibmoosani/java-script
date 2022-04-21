@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var pori = parseInt(prompt("how many pori do you want to parchase?"))
+var halwa = parseFloat(prompt("how many  halwa  do you parcahse"))
+var alo = parseFloat(prompt("how many  alo plates do you parcahse"))
+var chole = parseFloat(prompt("how many  chole plates do you parcahse"))
+var achar = parseFloat(prompt("how many  achar do you parcahse"))
+
+
+var totalporibill = pori * 29 
+var halwa = halwa * 20  
+var  alo = alo * 55
+var chole = chole * 100 
+var  achar = achar * 15 
+
+
+var totalbill = totalporibill + halwa + alo + chole + achar 
+var tax = totalbill * 0.16 
+var amountpayable = totalbill + tax 
+
+
+
+document.write( " <h1> quantity" +pori + "<h1/> <hr/> <br/>"  )
+document.write( " <h1> totalporibill rs " +totalporibill  +" <h1/> <hr/> <br/>" )
+document.write( " <h1> halwa rs " + halwa  +" <h1/> <hr/> <br/>" )
+document.write( " <h1> alo rs " + alo  +" <h1/> <hr/> <br/>" )
+document.write( " <h1>  chole rs "  + chole  +" <h1/> <hr/> <br/>" )
+document.write( " <h1>  achar rs " + achar  +" <h1/> <hr/> <br/>" )
+document.write( " <h1>  total bill " + totalbill  +" <h1/> <hr/> <br/>" )
+document.write( " <h1>  tax" + tax  +" <h1/> <hr/> <br/>" )
+document.write( " <h1>  amountpayable" + amountpayable  +" <h1/> <hr/> <br/>" )
+
+
+
+    
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
