@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ var hardnees = parseInt(prompt("steel hardnees"))
+ var carbon = parseFloat(prompt("steel carbon"))
+ var tensile = parseInt(prompt("steel tensile"))
+ if  ((hardnees >= 50) && (carbon <= 0.7) && (tensile > 5600)) {
+    document.write("<h3>  this is A+ condition <h3/>"  );
+    }
+
+else if  ((hardnees >= 50) && (carbon <= 0.7)) {
+    document.write("<h3>  this is b condition <h3/>"  );
+    }
+else if  ((carbon <= 0.7) && (tensile > 5600) ){
+    document.write("<h3>  this is c condition <h3/>"  );
+    }
+    
+    
+
+else {
+    document.write("<h3>  this is d condition <h3/>"  );
+}
+
+var book = parseInt (prompt("how  many days you are late ? "))
+
+if (( book >=1 )&&( book <=5 )){
+  document.write("you are late your fine is 50 paisa")
+}
+else if (( book >=6 )&&( book <=10 )){
+  document.write("you are late your fine is 1 rupee")
+}
+else if (( book >=10 )&&( book <=30 )){
+  document.write("you are late your fine is  5 rupee")
+}
+
+else {
+  document.write("you*re membership cancle")
+}
+
+    </script>
+</body>
+</html>

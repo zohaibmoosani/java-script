@@ -33,13 +33,40 @@
 //     document.write("you are fail") 
 // }
 
-var email = prompt("enter email")
-var password = prompt("enter pwd")
+// var email = prompt("enter email")
+// var password = prompt("enter pwd")
 
-if (email == "admin@gmail.com" && password == "123"){
-    document.write ("welcome admin ")
+// if (email == "admin@gmail.com" && password == "123"){
+//     document.write ("welcome admin ")
+// }
+// else {
+//     document.write ("eror 404")
+
+// }
+ 
+document.write("<h1> Zohaib Loan service <h1/> <hr/>")
+
+
+var age = parseInt(prompt("enter your age"))
+var gender = (prompt("enter your  gender"))
+var assest = parseInt(prompt("enter your  assest"))
+
+
+if ((age >= 16 && age >= 25) && (gender == "male") && (assest > 2000)) {
+    document.write("<h3> you*re eligible for Rs.1lac ");
 }
-else {
-    document.write ("eror 404")
+else if ((age >= 16 && age >= 22) && (gender == "female") && (assest > 2000)) {
+    document.write("<h3> you*re eligible for Rs.1lac ");
+}
+else if ((age >= 25 && age >= 30) && (gender == "female") && (assest > 5000)) {
+    document.write("<h3> you*re eligible for Rs.250000 ");
+}
+else if ((age >= 23 && age >= 30) && (gender == "female") && (assest > 4000)) {
+    document.write("<h3> you*re eligible for Rs.2lac ");
+}
 
+
+else{
+    document.write("<h3>  you*re not eligible for Rs.100000 ");
+    
 }
