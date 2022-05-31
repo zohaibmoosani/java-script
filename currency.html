@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-4 container-fluid border border-warning">
+            <h2 class="text-center text-warning">Distance Convertor App</h2>
+        </div>
+
+        <div class="mt-4 container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5 class="text-light">Distance</h5>
+                    <p class="text-justify text-light">Distance and displacement are two quantities that seem to mean
+                        the same but are distinctly
+                        different with different meanings and definitions. Distance is the measure of “how much ground
+                        an object has covered during its motion” while displacement refers to the measure of “how far
+                        out of place is an object.” In this article, let us understand the difference between distance
+                        and displacement.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="download (1).jfif" alt="Not Available" class="img-fluid img-responsive">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <p class="text-light text-justify"><b>Centimeter</b> A centimetre or centimeter is a unit of length
+                        in the metric
+                        system, equal to one hundredth of a metre, centi being the SI prefix for a factor of 1/100.</p>
+                    <hr style="background-color: white;"/>
+                    <p class="text-light text-justify"><b>MilliMeter</b> A centimetre or centimeter is a unit of length
+                        in the metric
+                        system, equal to one hundredth of a metre, centi being the SI prefix for a factor of 1/100.</p>
+                        <hr style="background-color: white;"/>
+
+                    <p class="text-light text-justify"><b>KiloMeter</b> A centimetre or centimeter is a unit of length
+                        in the metric
+                        system, equal to one hundredth of a metre, centi being the SI prefix for a factor of 1/100.</p>
+                </div> -->
+                <div class="p-3 border border-warning col-md-6 col-sm-6">
+                    <input type="number" id="meterinput" class="form-control" placeholder="Enter your currency" required>
+                    <div class="mt-4 row">
+                        <div class="col-md-3">
+                            <label class="text-light">Select Unit</label>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="unit" class="form-control">
+                                <option value="gg">Unit</option>
+                                <option value="dollor">dollor</option>
+                                <option value="dirham">dirham</option>
+                                <option value="taka">taka</option>
+                                <option value="euro">euro</option>
+                                <option value="riyal">riyal</option>
+                                <option value="dinar">dinar</option>
+                                <option value="pound">pound</option>
+                                <option value="indiain">indiain rs</option>
+
+
+
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <button class="btn btn-warning btn-block" onclick="calc()">Convert</button>
+                        </div>
+                    </div>
+
+                    <input type="text" id="answer" placeholder="Answer" class="mt-4 form-control" readonly>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="DistanceConvertor.js"></script>
+</body>
+
+</html>
