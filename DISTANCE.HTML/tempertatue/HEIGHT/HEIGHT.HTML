@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Height Convert</title>
+</head>
+<style>
+    body {
+        background-color:#c8d9ec;
+    }
+</style>
+
+<body>
+    <nav style="background-color:#134277" class="navbar navbar-expand-lg navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="../../../INDEX.html">DISTANCE CONVERTER</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../../../INDEX.html" target="--">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../WEIGHT.HTML" target="--">Weight</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../TEMPERTATURE.HTML" target="--">TEMPERATURE</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="HEIGHT.HTML">HEIGHT</a>
+                </li>
+            </ul>
+    </nav>
+
+    <div class="container">
+        <div class="mt-4 container-fluid" style="border: ridge rgb(160, 10, 73);">
+            <h2 class="text-center text-black"> Height CONVERTER APP</h2>
+        </div>
+        <div class="mt-4 container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5 class="text-black;">Height</h5>
+                    <p class="text-justify text-black;">Height or stature is the distance from the bottom of the feet to
+                        the top of the head in a human body, standing erect. It is measured using a stadiometer in
+                        centimetres when using the metric system, or feet and inches when using United States
+                        customary units or the imperial system.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCg4nwkemtXX_3i7KSmzO7iwLVn-xuwjY6A&usqp=CAU"
+                        alt="Not Available" class="img-fluid img-responsive">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <p class="text-black; text-justify"><b>Centimetres</b> A unit of measurement that is 1/100th of a
+                        meter or approximately 4/10ths of an inch (0.39 inch). The definition of a centimeter is one
+                        hundredth of a meter (. 3937 inches). An example of a centimeter is approximately the width of
+                        an adult's smallest fingernail.</p>
+                    <hr style="background-color: black;" />
+                    <p class="text-black; text-justify"><b>Millimetre</b>
+                        The millimetre (international spelling; SI unit symbol mm) or millimeter (American spelling) is
+                        a unit of length in the metric system, equal to one thousandth of a metre, which is the SI base
+                        unit of length. Therefore, there are one thousand millimetres in a metre. There are ten
+                        millimetresin a centimetre.</p>
+                    <hr style="background-color: black;" />
+
+                    <p class="text-black; text-justify"><b>Kilometers </b> The kilometre (SI symbol: km; /ˈkɪləmiːtər/
+                        or /kIlɒmətər/), spelt kilometer in American English, is a unit of length in the metric system,
+                        equal to one thousand metres (kilo- being the SI prefix for 1000). It is now the measurement
+                        unit used for expressing distances between geographical places on land in most of the world;
+                        notable exceptions are the United States and the United Kingdom where the statute mile is the
+                        unit used.</p>
+                </div>
+                <div class="p-3 border border-danger col-md-6 col-sm-6">
+                    <input type="number" id="meterinput" class="form-control" placeholder="Enter Distance in Meter"
+                        required>
+                    <div class="mt-4 row">
+                        <div class="col-md-3">
+                            <label class="text-">Select Unit</label>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="unit" class="form-control">
+                                <option value="gg">Unit</option>
+                                <option value="KALVIN">MILIMETER</option>
+                                <option value="centigrade">centimetres</option>
+                                <option value="farheinheit">KILOMETER</option>
+                                <option value="INCHES">INCHES</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <button class="btn btn-warning btn-block" onclick="calc()">Convert</button>
+                        </div>
+                    </div>
+
+                    <input type="text" id="answer" placeholder="Answer" class="mt-4 form-control" readonly>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>zohaibmoosani</h3>
+                        <p>A company, abbreviated as co., is a legal entity representing an association of people,
+                            whether natural, legal or a mixture of both, with a specific objective. Company members
+                            share a common purpose and unite to achieve specific, declared goals</p>
+                    </div>
+                    <!-- <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div> -->
+                </div>
+                <p class="copyright">2022 to 1999</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</body>
+
+</html>
+<script src="DistanceConvertor.js"></script>
+
+
+
+
+</body>
