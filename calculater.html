@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            background-color: cadetblue;
+            color: white;
+            font-size: 24px;
+        }
+        input[type="button"]{
+            width: 80px;
+            background-color: cadetblue;
+            border: 1px solid cadetblue;
+            color: white;
+        }
+        table{
+            margin: auto;
+            border: 1px solid #b36556;
+            background-color: #b36556;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form name="shoaib">
+            <table>
+                <tr>
+                    <td colspan="3"><input type="text" name="amin" maxlength="4" readonly /> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="1" onclick="shoaib.amin.value += '1'"></td>
+                    <td> <input type="button" value="2" onclick="shoaib.amin.value += '2'"></td>
+                    <td> <input type="button" value="3" onclick="shoaib.amin.value += '3'"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="4" onclick="shoaib.amin.value += '4'"></td>
+                    <td> <input type="button" value="5" onclick="shoaib.amin.value += '5'"></td>
+                    <td> <input type="button" value="6" onclick="shoaib.amin.value += '6'"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="7" onclick="shoaib.amin.value += '7'"></td>
+                    <td> <input type="button" value="8" onclick="shoaib.amin.value += '8'"></td>
+                    <td> <input type="button" value="9" onclick="shoaib.amin.value += '9'"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="0" onclick="shoaib.amin.value += '0'"></td>
+                    <td> <input type="button" value="+" onclick="shoaib.amin.value += '+'"></td>
+                    <td> <input type="button" value="-" onclick="shoaib.amin.value += '-'"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="*" onclick="shoaib.amin.value += '*'"></td>
+                    <td> <input type="button" value="/" onclick="shoaib.amin.value += '/'"></td>
+                    <td> <input type="button" value="=" onclick="shoaib.amin.value = eval(shoaib.amin.value)"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"> <input type="button" value="C" onclick="shoaib.amin.value = ''" style="width: 98%;"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
